@@ -42,21 +42,9 @@ export function LandingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background video */}
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/Climate Change - A FIGHT WE PICKED - Inspire A Phoenix (1080p, h264).mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-        {/* Overlay for better text visibility */}
-        <div className="absolute inset-0 bg-black/40" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 via-emerald-900 to-slate-800">
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-black/30" />
 
         {/* Floating elements */}
         <motion.div
