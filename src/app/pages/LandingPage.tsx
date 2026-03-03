@@ -51,7 +51,7 @@ export function LandingPage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/src/Video/Climate Change - A FIGHT WE PICKED - Inspire A Phoenix (1080p, h264).mp4" type="video/mp4" />
+          <source src="/videos/Climate Change - A FIGHT WE PICKED - Inspire A Phoenix (1080p, h264).mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         
