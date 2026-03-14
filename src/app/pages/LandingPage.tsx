@@ -28,7 +28,8 @@ import {
   CarouselPrevious,
 } from "../components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import videoFile from "../../Video/Climate Change - A FIGHT WE PICKED - Inspire A Phoenix (1080p, h264).mp4";
+
+const videoUrl = '/Climate Change - A FIGHT WE PICKED - Inspire A Phoenix (1080p, h264).mp4';
 
 export function LandingPage() {
   const [carbonCount, setCarbonCount] = useState(1234567);
@@ -51,7 +52,7 @@ export function LandingPage() {
           muted
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src={videoFile} type="video/mp4" />
+          <source src={videoUrl} type="video/mp4" />
         </video>
 
         {/* Background gradient overlay */}

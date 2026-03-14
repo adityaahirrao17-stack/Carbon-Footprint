@@ -1,8 +1,10 @@
 import { motion } from "motion/react";
 import { ArrowRight, Mail, Lock, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router";
 
 export function LoginPage() {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,7 +16,7 @@ export function LoginPage() {
     // Simulate login process
     setTimeout(() => {
       // Redirect to dashboard after "login"
-      window.location.href = "/dashboard";
+      navigate("/dashboard");
     }, 1500);
   };
 
