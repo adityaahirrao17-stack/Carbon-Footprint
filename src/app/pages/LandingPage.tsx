@@ -28,6 +28,7 @@ import {
   CarouselPrevious,
 } from "../components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import videoFile from "../../Video/Climate Change - A FIGHT WE PICKED - Inspire A Phoenix (1080p, h264).mp4";
 
 export function LandingPage() {
   const [carbonCount, setCarbonCount] = useState(1234567);
@@ -43,6 +44,16 @@ export function LandingPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-900 via-emerald-900 to-slate-800">
+        {/* Background video */}
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={videoFile} type="video/mp4" />
+        </video>
+
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-black/30" />
 
@@ -99,7 +110,7 @@ export function LandingPage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-2xl font-['Poppins'] font-semibold text-lg hover:bg-white/20 transition-all min-w-[240px]"
+                  className="bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-2 rounded-2xl font-['Poppins'] font-semibold text-base hover:bg-white/20 transition-all min-w-[240px] flex items-center gap-2 justify-center"
                 >
                   Login
                   <ArrowRight className="w-4 h-4" />
